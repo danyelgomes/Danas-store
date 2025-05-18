@@ -191,6 +191,7 @@ div.content2 img {
     margin: 0px 0px;
     flex: 0 1 300px;
     transition: .5s;
+    border-radius: 10px;
 }
 
 div.content1 img:hover, div.content2 img:hover, button:hover {
@@ -202,7 +203,7 @@ div.content1 div, div.content2 div {
     width: 300px;
     background-color: #ffffff;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: .7s;
 }
 div.content1 div p, div.content2 div p {

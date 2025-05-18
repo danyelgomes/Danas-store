@@ -1,0 +1,235 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+/* Config global dos links(a) */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+body, html {
+    min-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-size: cover;
+}
+
+main {
+    color: #000000;
+}
+
+header {
+    background-color: whitesmoke;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; 
+    position: fixed;
+    box-shadow: 0px 0px 9px #00000054;
+    top: 0px;
+}
+
+header h1 {
+    margin: 0px 0px 0px 60px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 3.3em;
+    color: rgb(0, 0, 0);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+}
+header nav ul li {
+    display: flex;
+    margin: 0px 10px;
+}
+
+header nav ul li a:hover {
+    transition: .3s;
+    background-color: #0000008f;
+    color: rgb(255, 255, 255);
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 2px solid #c9c9c9;
+}
+
+main section.first-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 450px;
+    overflow: hidden;
+    margin: 100px 0px 0px 0px;
+    background: url(imagens/banner.jpg) no-repeat top center scroll;
+    background-size: cover;
+    background-position-y: 37%; 
+}
+div.tittle-left h1 {
+    margin: 0px 00px 0px 41px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 48px;
+    color: rgb(0, 0, 0);
+    width: 271px;
+    line-height: 70px;
+}
+
+div.tittle1 h1 span {
+    font-weight: 500;
+    margin-left: 50px;
+    font-size: 74px;
+}
+
+div.banner img {
+    width: 360px;
+    
+}
+
+div.tittle-right {
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    width: 449px;
+    line-height: 70px;
+}
+
+main section div.img1 {
+    margin-right: 40px;
+}
+
+main section div img {
+    width: 300px;
+}
+
+
+/* Segunda seção */
+
+article {
+    width: 100%;
+    height: 3500px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+    margin-top: 0px;
+}
+
+article div.tittle2 h1 {
+    display: block;
+}
+
+article h1 {
+    text-transform: uppercase;
+    color: #000000ce;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+}
+
+div.content1 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex: 0 1 300px;
+    transition: 1s;
+    max-width: 1087px;
+}
+
+article div.content1 img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 375px;
+    margin: 0px auto;
+    flex: 0 1 300px;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+div.content2 {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    flex: 0 1 300px;
+    transition: .5s;
+}
+
+div.content2 img {
+    width: 300px;
+    height: 375px;
+    margin: 0px 0px;
+    flex: 0 1 300px;
+    transition: .5s;
+}
+
+div.content1 img:hover, div.content2 img:hover, button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+div.content1 div, div.content2 div {
+    width: 300px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 5px;
+    transition: .7s;
+}
+div.content1 div p, div.content2 div p {
+    font-family: 'Poppins';
+    font-weight: 300;
+
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    margin-left: 5px;
+}
+        /* 685px quebra de imagens */
+@media screen and (max-width: 790px) {
+    header nav ul li a {
+        border: none;
+    }
+    header h1 {
+        font-size: 2.5em;
+        color: #FFF;
+    }
+    article {
+        height: 5000px;
+    }
+    div.content1 {
+        height: 2730px;
+    }
+    div.content2 {
+        margin-top: 1220px;
+    }
+}
